@@ -7,12 +7,10 @@ import Index from '@/pages/index';
 
 describe('Index page', () => {
   describe('Render method', () => {
-    it('should have h1 tag', () => {
+    it('should have h1 tag', async () => {
       render(<Index />);
 
-      const heading = screen.getByRole('heading', {
-        name: /Omnes Blockchain/,
-      });
+      const heading = await screen.findByText('Omnes Blockchain');
 
       expect(heading).toBeInTheDocument();
     });
