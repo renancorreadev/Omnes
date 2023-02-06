@@ -11,7 +11,7 @@ const Index = () => {
       }
     >
       <div>
-        <h1>Omnes Blockchain</h1>
+        <h1 role="title">Omnes Blockchain</h1>
       </div>
     </Main>
   );

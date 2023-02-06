@@ -10,7 +10,7 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <div className="w-full px-1 text-gray-700 antialiased">
     {props.meta}
-
+    {props.children}
     <Footer />
   </div>
 );
